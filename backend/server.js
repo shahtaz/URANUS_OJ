@@ -26,7 +26,7 @@ app.use(cors({origin: allowedOrigins, credentials: true}))
 app.get('/', (req, res)=>res.send("api workig"));
 app.use('/api/auth', authRouter);
 app.use('/api/user', userRouter);
-app.use('/api/problem/', problemRouter);
+app.use('/api/problem', problemRouter);
 
 
 
