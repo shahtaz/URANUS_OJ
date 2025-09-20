@@ -10,6 +10,7 @@ const userSchema = new mongoose.Schema({
     isAccountVarified: {type: Boolean, default: false},
     resetOtp: {type: String, default: ''},
     resetOtpExpireAt: {type: Number, default: 0},
+    role: { type: String, enum: ['user', 'admin'], default: 'user' },
 
 })
 
