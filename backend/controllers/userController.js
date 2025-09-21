@@ -15,7 +15,9 @@ export const getUserData = async(req, res) => {
             success: true,
             userData:{
                 name: user.name,
-                isAccountVarified : user.isAccountVarified
+                isAccountVarified : user.isAccountVarified,
+                role: user.role,
+                email: user.email
             }
         });
     }catch(error){

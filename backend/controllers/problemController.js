@@ -1,6 +1,6 @@
 import Problem from "../models/problemModel.js";
 
-// view all problem
+// view all problem api
 export const viewProblem = async(req, res)=>{
     try{
         const problem = await Problem.find().sort({createdAt: -1});
