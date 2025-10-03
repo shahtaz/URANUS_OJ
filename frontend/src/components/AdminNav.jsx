@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link  } from "react-router-dom"
 import { PlusIcon } from "lucide-react"
-
 const AdminNav = () => {
   return (
     <header className='bg-base-300 border-b border-base-content/10'>

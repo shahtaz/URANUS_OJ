@@ -12,6 +12,10 @@ import CreateProblem from './pages/CreateProblem'
 import ProblemDelete from './pages/ProblemDelete'
 import AdminRoute from './components/AdminRoute'
 import UpdateProblemPage from './pages/UpdateProblemPage'
+
+import UserProblemSet from './pages/UserProblemSet'
+import UserProblemDescription from './pages/UserProblemDescription'
+
 const App = () => {
   return (
     <div>
@@ -61,6 +65,8 @@ const App = () => {
               </AdminRoute>
             }
           />
+          <Route path="/user/problems" element={<UserProblemSet />} />
+          <Route path="/user/problem-description/:id" element={<UserProblemDescription />} />
         </Routes>
     
     </div>

@@ -10,7 +10,7 @@ const Header = () => {
 
   const handleGetStarted = () => {
     if (isLoggedin) {
-      navigate('/problems') // redirect to problem set page
+      navigate('/user/problems') // redirect to problem set page
     } else {
       toast.info('Please login first') // notify user
     }
